@@ -14,6 +14,8 @@ $(document).ready(function () {
     $('.next').click(function () {
         let current = $('.layer.visible');
         let next = $(current).next();
+        // let modal = $('.modal-btn');
+        // $(this).siblings(":last").modal.addClass('hidden');
         if (next.length) {
             next.addClass('visible');
             $(current).removeClass('visible');
@@ -24,7 +26,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.prev').click(function () {
+    $('.prev, .prev-btn').click(function () {
         let current = $('.layer.visible');
         let prev = $(current).prev();
         if (prev.length) {
@@ -43,28 +45,51 @@ function closeModal() {
 }
 
 
+
+function phoneNumber(phoneNumber) {
+    var regExp = /^((\+7|7|8)+([0-9]){10})$/;
+    var phone = phoneNumber.match(regExp);
+    return phone;
+}
+
+
+$('.valid').click (function () {
+let phoneinput = $(this).closest('form').find('.phone-inp');
+let message = $(this).closest('form').find('.input-message');
+if (!phoneNumber(phoneinput.val())) {
+message.addClass('visible');
+}
+
+});
+
+
+
 var $slider = $("#sliders");
 var $fill = $(".fill");
-
 function setBar() {
-    $fill.css("width", $slider.val() + "%");
+    $fill.css("width", ($slider.val() / 500) + "%" );
 }
 
 $slider.on("input", setBar);
 setBar();
 
-var slider = document.querySelector("#sliders");
-var selectvalue = document.querySelector(".metr");
-selectvalue.innerHTML = slider.value;
-slider.oninput = function () {
-    selectvalue.innerHTML = this.value;
-};
 
 
+var range = document.querySelector(".slider");
+var bubble = document.querySelector(".metr");
+range.addEventListener("input", () => {
+    bubble.innerHTML = range.value;
+});
+range.addEventListener("input", () => {
+    setBubble(range, bubble);
+});
 
+function setBubble(range, bubble) {
+    const val = range.value;
+    const min = range.min ? range.min : 20;
+    const max = range.max ? range.max : 50000;
+    const newVal = Number(((val - min) * 100) / (max - min));
+    bubble.innerHTML = val;
+    bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 
-
-
-
-
-
+}

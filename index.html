@@ -118,19 +118,15 @@
                         <h5>ВОПРОС 3.</h5>
                         <p>Какая ориентировочная площадь объекта? (кв.м)</p>
                         <div class="metr">
-                            <span>15 500</span>
+                            <span>15500</span>
                         </div>
                         <div class="slide-container">
                         <span class="bar">
-              <span class="fill" style="width: 0"></span>
+              <span class="fill" style="width: 0%"></span>
                         </span>
-                            <input id="sliders" class="slider" type="range" min="20" max="50000" step="1" value="15500"
+                            <input id="sliders" class="slider" type="range" name="foo" min="20" max="50000" step="1" value="15500"
                                    data-orientation="vertical">
-                            <div id="selector">
-                                <div class="selectbtn">
-
-                                </div>
-                            </div>
+                            <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
                         </div>
                         <div class="range-metr">
                             <span>20</span>
@@ -156,12 +152,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="layer">
+                    <form class="layer">
                         <h4 class="done">Отлично! <br> Мы уже начинаем готовить вашу смету.
                             Как нам с вами связаться?</h4>
                         <div class="text">
                             <div class="your-phone">
                                 <span>Ваш номер телефона</span>
+                            </div>
+                            <div class="phone-warning1 input-message">
+                                <span>Please enter a valid phone number!</span>
                             </div>
                             <div class="your-email">
                                 <span>Ваш e-mail</span>
@@ -183,11 +182,11 @@
                                     <img src="img/Polygon1.png" class="arrow-btn-prev" alt="">
                                 </button>
                             </div>
-                            <div class="pay">
+                            <div class="pay valid">
                                 <button class="calc-prices">Узнать стоимость</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="modal-btn">
                     <div class="prev disabled">
@@ -326,9 +325,12 @@
             <p class="discount-desc">при заказе с сайта</p>
 
         </div>
-        <form action="mailto:email@mail.ru">
+        <form action="mailto:email@mail.ru" class="form">
             <div class="your-phone">
                 <span>Ваш номер телефона</span>
+            </div>
+            <div class="phone-warning2 input-message">
+                <p>Please enter a valid phone number!</p>
             </div>
             <div class="input-field">
                 <input type="text" class="input phone-inp" maxlength="11" name="phone" placeholder="+7 (812) 456-95-63">
@@ -339,8 +341,8 @@
             <div class="input-field">
                 <input type="text" class="input mail-inp" name="email" placeholder="email@mail.ru">
             </div>
-            <div class="get-btn">
-                <a href="" id="btn">Получить скидку</a>
+            <div class="get-btn valid">
+                <a href="" class="btn">Получить скидку</a>
             </div>
             <div class="agree">
                 <input type="radio" class="radio">

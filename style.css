@@ -435,7 +435,7 @@
     width: 100%;
 }
 
-form {
+.form {
     width: 27%;
     background: white;
     padding: 50px 30px;
@@ -454,7 +454,31 @@ form {
     line-height: 24px;
     color: #282827;
 }
-
+.phone-warning1 {
+    background: #ff6a00;
+    position: absolute;
+    top: 35%;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    left: 3%;
+    visibility: hidden;
+    opacity: 0;
+}
+.phone-warning2 {
+    background: #ff6a00;
+    position: absolute;
+    top: 8%;
+    color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+}
 .your-email {
     font-style: normal;
     font-weight: 300;
@@ -486,14 +510,14 @@ form {
     color: #F75F5E;
 }
 
-#btn {
+.btn {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
     text-decoration: none;
-
+cursor: pointer;
 }
 
 .get-btn {
@@ -773,7 +797,7 @@ h5 {
     left: 0;
     top: 52px;
     width: 100%;
-    height: 3px;
+    height: 5px;
     border-radius: 5px;
     background: rgba(0, 128, 0, 0.51);
     overflow: hidden;
@@ -782,8 +806,7 @@ h5 {
 .fill {
     display: block;
     height: 100%;
-    /*background-color: rgba(0, 128, 0, 0.74);*/
-    background: red;
+    background-color: green;
 }
 
 #sliders {
@@ -791,7 +814,7 @@ h5 {
     z-index: 2;
     -webkit-appearance: none;
     width: 100%;
-    height: 3px;
+    height: 5px;
     background: #C4C4C4;
     border-radius: 5px;
     outline: none;
@@ -845,6 +868,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     width: 90%;
+    margin: 0 10px 0 20px;
 }
 
 .inp {
@@ -859,13 +883,13 @@ h5 {
 
 .text {
     width: 60%;
-    margin-top: 25px;
+    margin: 25px 10px 0 25px;
     display: flex;
     justify-content: space-between;
 }
 
 .privacy-policy {
-    margin: 25px 0;
+    margin: 25px 10px 25px 25px;
 }
 
 .privacy-policy span {
