@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="https://symu.co/favicon.png?ver=146">
+    <link rel="stylesheet" href="style.css">
+    <title>Symu</title>
+</head>
+<body>
+
+<main>
+    <section class="top">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-name">
+                    <span>Сметы</span>
+                </div>
+                <div>
+                    <span class="row"></span>
+                </div>
+                <div class="logo-desc">
+                    <span>определение сметной стоимости</span>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active">Наши услуги</li>
+                    <li>О нас</li>
+                    <li>Как мы работаем</li>
+                    <li>Отзывы</li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <!--                                <p class="phone-number">+7 (812) 456-95-63</p>-->
+                <a href="tel:78124569563" class="phone">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="top-desc">
+            <div class="top-text">
+                <h1 class="top-title">ОПРЕДЕЛЕНИЕ СМЕТНОЙ СТОИМОСТИ</h1>
+                <p class="montaj">на реставрацию, <br> строительно-монтажные работы, ПНР, ПИР</p>
+
+                <div class="calc-price-container">
+                    <p class="get-price">Получить стоимость сметы за 1 день</p>
+                    <img src="img/arrow.png" alt="" class="arrow-calc">
+                    <button class="calc-price">Рассчитать стоимость</button>
+                </div>
+            </div>
+            <div class="top-img">
+                <img src="img/planshet.png" alt="">
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <div class="modal-close-btn">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="questions">
+                    <div class="layer visible">
+                        <h4>Ответьте на 4 вопроса для расчета стоимости</h4>
+                        <h5>ВОПРОС 1.</h5>
+                        <p>На какие виды работ требуется подготовить смету?</p>
+                        <div class="answers">
+                            <div class="answers-left">
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Проектные работы</span>
+                                </div>
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer" checked>
+                                    <span>Строительные работы</span>
+                                </div>
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Монтажные работы</span>
+                                </div>
+                            </div>
+                            <div class="answers-right">
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Пусконаладочные работы</span>
+                                </div>
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Укрупненный расчет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <h4>Ответьте на 4 вопроса для расчета стоимости</h4>
+                        <h5>ВОПРОС 2.</h5>
+                        <p>Какие дополнительные документы требуются?</p>
+                        <div class="answers">
+                            <div class="answers-left">
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Никаких</span>
+                                </div>
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Акт по форме КС-2</span>
+                                </div>
+                            </div>
+                            <div class="answers-right">
+                                <div class="work-types">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Конъюнктурный анализ цен</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <h4>Ответьте на 4 вопроса для расчета стоимости</h4>
+                        <h5>ВОПРОС 3.</h5>
+                        <p>Какая ориентировочная площадь объекта? (кв.м)</p>
+                        <div class="metr">
+                            <span>15 500</span>
+                        </div>
+                        <div class="slide-container">
+                        <span class="bar">
+              <span class="fill" style="width: 0"></span>
+                        </span>
+                            <input id="sliders" class="slider" type="range" min="20" max="50000" step="1" value="15500"
+                                   data-orientation="vertical">
+                            <div id="selector">
+                                <div class="selectbtn">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range-metr">
+                            <span>20</span>
+                            <span>50 000</span>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <h4>Ответьте на 4 вопроса для расчета стоимости</h4>
+                        <h5>ВОПРОС 4.</h5>
+                        <p>Требуется ли защита проекта в экспертизе?</p>
+                        <div class="answers-yes">
+                            <div class="answers-left-yes">
+                                <div class="protection">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Да</span>
+                                </div>
+                            </div>
+                            <div class="answers-right-yes">
+                                <div class="protection">
+                                    <input type="radio" class="radio" name="answer">
+                                    <span>Нет</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layer">
+                        <h4 class="done">Отлично! <br> Мы уже начинаем готовить вашу смету.
+                            Как нам с вами связаться?</h4>
+                        <div class="text">
+                            <div class="your-phone">
+                                <span>Ваш номер телефона</span>
+                            </div>
+                            <div class="your-email">
+                                <span>Ваш e-mail</span>
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" class="phone-inp inp" maxlength="11" name="phone"
+                                   placeholder="+7 (812) 456-95-63">
+                            <input type="text" class="mail-inp inp" name="email" placeholder="email@mail.ru">
+                        </div>
+                        <div class="privacy-policy">
+                            <input type="radio">
+                            <span>принимаю <a
+                                    href="privacypolicy.html">политик</a>у обработки персональных данных</span>
+                        </div>
+                        <div class="form-buttons">
+                            <div class="prev-btn">
+                                <button type="button">Назад
+                                    <img src="img/Polygon1.png" class="arrow-btn-prev" alt="">
+                                </button>
+                            </div>
+                            <div class="pay">
+                                <button class="calc-prices">Узнать стоимость</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-btn">
+                    <div class="prev disabled">
+                        <button type="button">Назад
+                            <img src="img/Polygon1.png" class="arrow-btn-prev" alt="">
+                        </button>
+                    </div>
+                    <div class="next">
+                        <button type="button">Далее
+                            <img src="img/Polygon1.png" class="arrow-btn" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="about">
+            <ul class="about-li">
+                <li>
+                    <img src="img/clock2.png" alt="">
+                    <p>Четко в срок</p>
+                </li>
+                <li>
+                    <img src="img/Frame1.png" alt="">
+                    <p>Расчет за 1 день</p>
+                </li>
+                <li>
+                    <img src="img/Group.png" alt="">
+                    <p>Только профессионалы</p>
+                </li>
+                <li>
+                    <img src="img/skills1.png" alt="">
+                    <p>Опыт работы <br> с экспертизой</p>
+                </li>
+                <li>
+                    <img src="img/group(2).png" alt="">
+                    <p>Анализ <br> сметной документации</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="our-service">
+        <div class="service-title">
+            <h3 class="s-title">Наши услуги</h3>
+            <img class="triangle" src="img/Group45.png" alt="">
+        </div>
+        <div class="service-desc">
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/_23-2147842992%201.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Определение сметной стоимости</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/gabrielle-henderson-HJckKnwCXxQ-unsplash1.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Создание исполнительной документации</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/jeshoots-com-LtNvQHdKkmw-unsplash1.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Учет выполненных работ</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/_1098-38811.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Прохождение экспертизы сметной стоимости</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/van-tay-media-TFFn3BYLc5s-unsplash%201.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Защита документации в экспертизе</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-block">
+                <div class="service-img">
+                    <img src="img/_1098-14879%201.png" alt="">
+                </div>
+                <div class="service-text-container">
+                    <p class="service-text">Обслуживаем компании на постоянной основе</p>
+                    <div class="block-btn">
+                        <a href="" class="service-btn">Заказать
+                            <img src="img/Polygon1.png" class="arrow" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="discount">
+        <div class="get-discount">
+            <h3 class="discount-title">Получить скидку</h3>
+            <img class="disc-img" src="img/Group45.png" alt="">
+            <h3 class="percent">10%</h3>
+            <p class="discount-desc">при заказе с сайта</p>
+
+        </div>
+        <form action="mailto:email@mail.ru">
+            <div class="your-phone">
+                <span>Ваш номер телефона</span>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input phone-inp" maxlength="11" name="phone" placeholder="+7 (812) 456-95-63">
+            </div>
+            <div class="your-email">
+                <span>Ваш e-mail</span>
+            </div>
+            <div class="input-field">
+                <input type="text" class="input mail-inp" name="email" placeholder="email@mail.ru">
+            </div>
+            <div class="get-btn">
+                <a href="" id="btn">Получить скидку</a>
+            </div>
+            <div class="agree">
+                <input type="radio" class="radio">
+                <p class="agree-text">принимаю <a href="privacypolicy.html" target="_blank" class="privacy">политику</a>
+                    обработки персональных данных</p>
+            </div>
+        </form>
+        <div class="paper">
+            <img src="img/paper.png" alt="">
+        </div>
+    </section>
+</main>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
