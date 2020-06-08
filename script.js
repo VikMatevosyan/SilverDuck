@@ -9,13 +9,18 @@ $(document).ready(function () {
 
     $('.modal').click(function (e) {
         e.stopPropagation();
+
     });
 
     $('.next').click(function () {
         let current = $('.layer.visible');
         let next = $(current).next();
+        let modal = $('.modal-btn');
         if (next.length) {
             next.addClass('visible');
+            if ($(".layer5").hasClass("visible")) {
+                         modal.addClass('disabled');
+                     }
             $(current).removeClass('visible');
             $('.prev').removeClass('disabled');
         } else {
@@ -25,22 +30,7 @@ $(document).ready(function () {
 
     });
 
-   //  function Modal () {
-   //      let modal = $('.modal-btn');
-   //      if ( $(".layer5").hasClass("visible")) {
-   //          modal.addClass('disabled');
-   //      }
-   //  }
-   // Modal();
 
-//     function Modal () {
-//         let layer5 = document.querySelector(".layer5");
-//         let modalbuttons = document.querySelector(".modal-btn");
-//         if(layer5.classList.contains('visible')) {
-//             modalbuttons.classList.add('disabled');
-//         }
-//     }
-// Modal();
 
 
     $('.prev, .prev-btn').click(function () {
@@ -70,13 +60,13 @@ function phoneNumber(phoneNumber) {
 }
 
 
-$('.valid').click (function () {
+$('.valid').click (function (e) {
 let phoneinput = $(this).closest('form').find('.phone-inp');
 let message = $(this).closest('form').find('.input-message');
 if (!phoneNumber(phoneinput.val())) {
 message.addClass('visible');
 }
-
+    e.preventDefault();
 });
 
 
@@ -110,3 +100,5 @@ function setBubble(range, bubble) {
     bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 
 }
+
+
