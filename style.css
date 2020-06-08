@@ -607,7 +607,7 @@
 
 .modal {
     width: 50%;
-    min-width: 700px;
+    min-width: 450px;
     border-radius: 25px;
     background: #fff;
     position: absolute;
@@ -615,7 +615,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 710px;
-    min-height: 506px;
+    min-height: 530px;
 }
 
 .modal-close-btn {
@@ -703,13 +703,15 @@ h5 {
 
 .questions p {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 36px;
     text-align: center;
     color: #282827;
     margin-bottom: 20px;
 }
-
+.answers label {
+    font-size: 15px;
+}
 .layer {
     position: absolute;
     font-size: 20px;
@@ -968,6 +970,7 @@ h5 {
 .radio:checked + label {
     font-weight: bold;
 }
+
 /*Media*/
 @media screen and (max-width: 1283px) {
     .about {
@@ -975,12 +978,14 @@ h5 {
         width: 96%;
     }
 }
+
 @media screen and (max-width: 1253px) {
     .about {
         bottom: -160px;
         width: 96%;
     }
 }
+
 @media screen and (max-width: 1235px) {
     .about {
         bottom: -190px;
@@ -995,17 +1000,38 @@ h5 {
         right: 0;
     }
 }
+
 @media screen and (max-width: 1111px) {
     .about {
         width: 100%;
         bottom: -410px;
     }
+
     .about-li li {
         margin: 10px;
         min-width: 200px;
     }
+
     .our-service {
         margin-top: 535px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    h4 {
+        width: 90%;
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .questions p {
+        font-size: 17px;
+    }
+    .modal-btn {
+        width: 70%;
+    }
+    .answers label {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 1045px) {
@@ -1014,13 +1040,16 @@ h5 {
         left: 25%;
         width: 330px;
     }
+
     .discount {
         height: 150vh;
     }
+
     .discount::before {
         background-size: cover;
         height: 150vh;
     }
+
     .paper {
         position: absolute;
         left: 355px;
@@ -1028,6 +1057,7 @@ h5 {
         width: 61%;
     }
 }
+
 @media screen and (max-width: 927px) {
     .paper {
         position: absolute;
@@ -1036,21 +1066,23 @@ h5 {
         width: 600px;
     }
 }
+
 @media screen and (max-width: 920px) {
     .service-desc {
         margin-left: 15px;
     }
 
     .service-text-container {
-        padding: 45px 22px;
+        padding: 45px 15px;
     }
 }
 
 
 @media screen and (max-width: 862px) {
     .contacts {
-        width: 70%;
+        width: 100%;
     }
+
 
 }
 
@@ -1061,16 +1093,20 @@ h5 {
         top: 12%;
         width: 450px;
     }
+
     .discount-title {
         margin-left: 20px;
     }
+
     .percent {
         margin-left: 20px;
     }
+
     .discount-desc {
         margin-left: 20px;
         width: 46%;
     }
+
     .disc-img {
         left: 350px;
     }
@@ -1086,14 +1122,17 @@ h5 {
         position: relative;
         bottom: -375px;
     }
+
     .form {
         top: 122%;
         left: 15%;
         width: 330px;
     }
+
     .agree-text {
         width: 85%;
     }
+
     .paper {
         position: absolute;
         left: 175px;
@@ -1108,20 +1147,23 @@ h5 {
     }
 
 }
+
 @media screen and (max-width: 710px) {
-.about {
-    bottom: -450px;
-}
+    .about {
+        bottom: -450px;
+    }
 }
 
 @media screen and (max-width: 706px) {
     .about {
         bottom: -650px;
     }
+
     .our-service {
         margin-top: 800px;
     }
 }
+
 @media screen and (max-width: 682px) {
     .paper {
         position: absolute;
@@ -1130,17 +1172,171 @@ h5 {
         width: 320px;
     }
 }
+
 @media screen and (max-width: 545px) {
     .discount-title {
         font-size: 36px;
     }
+
     .disc-img {
         left: 296px;
     }
+
     .discount-desc {
         width: 54%;
     }
+
     .form {
         left: 10%;
+    }
+    .answers label {
+        font-size: 12px;
+    }
+    h4 {
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 40px;
+        text-align: center;
+        color: green;
+        width: 80%;
+    }
+    h5 {
+        font-size: 19px;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+    .modal-btn {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .contacts {
+        width: 100%;
+    }
+
+    .header {
+        padding: 15px 0 15px 8px;
+    }
+
+    .row {
+        left: 135px;
+    }
+
+    .top-text {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .top-title {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .montaj {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .about {
+        bottom: -1040px;
+    }
+
+    .our-service {
+        margin-top: 1100px;
+        height: 435vh;
+    }
+
+    .service-title {
+        height: 33vh;
+        padding-left: 10px;
+    }
+    .triangle {
+        left: 195px;
+    }
+    .service-desc {
+        margin-left: 30px;
+        top: 6%;
+    }
+    .s-title {
+        font-size: 38px;
+    }
+    .triangle {
+        left: 168px;
+    }
+    .discount {
+        bottom: -1550px;
+    }
+    .discount-title {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .disc-img {
+        left: 188px;
+    }
+    .paper {
+        position: absolute;
+        left: 76px;
+        top: 53%;
+        width: 279px;
+    }
+    .form {
+        left: 0;
+        padding: 50px 15px;
+    }
+    .modal-container {
+        width: 100%;
+    }
+    .modal {
+        width: 50%;
+        min-width: 340px;
+        border-radius: 25px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 710px;
+        min-height: 572px;
+    }
+    h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: green;
+        width: 70%;
+        margin-left: 50px;
+    }
+    h5 {
+        font-size: 17px;
+        line-height: 35px;
+        margin-left: -15px;
+    }
+    .questions p {
+        font-size: 14px;
+        margin-left: 4px;
+    }
+    .answers {
+        margin: 0 8px;
+    }
+    .modal-btn {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+@media screen and (max-width: 375px) {
+    .discount {
+        bottom: -1485px;
     }
 }
