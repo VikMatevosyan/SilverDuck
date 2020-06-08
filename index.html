@@ -66,26 +66,26 @@
                         <div class="answers">
                             <div class="answers-left">
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Проектные работы</span>
+                                    <input type="radio" class="radio" name="answer" id="project">
+                                    <label for="project">Проектные работы</label>
                                 </div>
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer" checked>
-                                    <span>Строительные работы</span>
+                                    <input type="radio" class="radio" name="answer" checked id="construction">
+                                    <label for="construction">Строительные работы</label>
                                 </div>
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Монтажные работы</span>
+                                    <input type="radio" class="radio" name="answer" id="montaj">
+                                    <label for="montaj">Монтажные работы</label>
                                 </div>
                             </div>
                             <div class="answers-right">
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Пусконаладочные работы</span>
+                                    <input type="radio" class="radio" name="answer" id="commissioning">
+                                    <label for="commissioning">Пусконаладочные работы</label>
                                 </div>
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Укрупненный расчет</span>
+                                    <input type="radio" class="radio" name="answer" id="integrated">
+                                    <label for="integrated">Укрупненный расчет</label>
                                 </div>
                             </div>
                         </div>
@@ -97,18 +97,18 @@
                         <div class="answers">
                             <div class="answers-left">
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Никаких</span>
+                                    <input type="radio" class="radio" name="answer" id="any">
+                                    <label for="any">Никаких</label>
                                 </div>
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Акт по форме КС-2</span>
+                                    <input type="radio" class="radio" name="answer" id="act">
+                                    <label for="act">Акт по форме КС-2</label>
                                 </div>
                             </div>
                             <div class="answers-right">
                                 <div class="work-types">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Конъюнктурный анализ цен</span>
+                                    <input type="radio" class="radio" name="answer" id="analysis">
+                                    <label for="analysis">Конъюнктурный анализ цен</label>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,8 @@
                         <span class="bar">
               <span class="fill" style="width: 0%"></span>
                         </span>
-                            <input id="sliders" class="slider" type="range" name="foo" min="20" max="50000" step="1" value="15500"
+                            <input id="sliders" class="slider" type="range" name="foo" min="20" max="50000" step="1"
+                                   value="15500"
                                    data-orientation="vertical">
                             <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
                         </div>
@@ -140,19 +141,19 @@
                         <div class="answers-yes">
                             <div class="answers-left-yes">
                                 <div class="protection">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Да</span>
+                                    <input type="radio" class="radio" name="answer" id="yes">
+                                    <label for="yes">Да</label>
                                 </div>
                             </div>
                             <div class="answers-right-yes">
                                 <div class="protection">
-                                    <input type="radio" class="radio" name="answer">
-                                    <span>Нет</span>
+                                    <input type="radio" class="radio" name="answer" id="no">
+                                    <label for="no">Нет</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <form class="layer">
+                    <form class="layer layer5">
                         <h4 class="done">Отлично! <br> Мы уже начинаем готовить вашу смету.
                             Как нам с вами связаться?</h4>
                         <div class="text">

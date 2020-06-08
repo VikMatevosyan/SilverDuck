@@ -14,8 +14,6 @@ $(document).ready(function () {
     $('.next').click(function () {
         let current = $('.layer.visible');
         let next = $(current).next();
-        // let modal = $('.modal-btn');
-        // $(this).siblings(":last").modal.addClass('hidden');
         if (next.length) {
             next.addClass('visible');
             $(current).removeClass('visible');
@@ -24,7 +22,26 @@ $(document).ready(function () {
             $('.next').addClass('disabled');
 
         }
+
     });
+
+   //  function Modal () {
+   //      let modal = $('.modal-btn');
+   //      if ( $(".layer5").hasClass("visible")) {
+   //          modal.addClass('disabled');
+   //      }
+   //  }
+   // Modal();
+
+//     function Modal () {
+//         let layer5 = document.querySelector(".layer5");
+//         let modalbuttons = document.querySelector(".modal-btn");
+//         if(layer5.classList.contains('visible')) {
+//             modalbuttons.classList.add('disabled');
+//         }
+//     }
+// Modal();
+
 
     $('.prev, .prev-btn').click(function () {
         let current = $('.layer.visible');

@@ -41,11 +41,13 @@
     background-image: url("img/Group44.png");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .header {
     padding: 15px 90px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
     color: white;
@@ -56,6 +58,7 @@
     display: flex;
     justify-content: space-between;
     width: 25%;
+    min-width: 320px;
 }
 
 .logo-name {
@@ -90,6 +93,8 @@
 
 .menu {
     width: 40%;
+    min-width: 345px;
+    margin-top: 15px;
     align-self: flex-end;
 }
 
@@ -230,13 +235,14 @@
     justify-content: space-between;
     margin: 0 auto;
     position: absolute;
-    bottom: -260px;
+    bottom: -110px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .about-li {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
     width: 100%;
@@ -314,6 +320,7 @@
     margin-bottom: 25px;
     overflow: hidden;
     max-width: 360px;
+    min-width: 215px;
 }
 
 .service-img img {
@@ -454,6 +461,7 @@
     line-height: 24px;
     color: #282827;
 }
+
 .phone-warning1 {
     background: #ff6a00;
     position: absolute;
@@ -467,6 +475,7 @@
     visibility: hidden;
     opacity: 0;
 }
+
 .phone-warning2 {
     background: #ff6a00;
     position: absolute;
@@ -479,6 +488,7 @@
     visibility: hidden;
     opacity: 0;
 }
+
 .your-email {
     font-style: normal;
     font-weight: 300;
@@ -517,7 +527,7 @@
     line-height: 24px;
     color: #FFFFFF;
     text-decoration: none;
-cursor: pointer;
+    cursor: pointer;
 }
 
 .get-btn {
@@ -616,6 +626,7 @@ cursor: pointer;
 }
 
 .prev button {
+    background: white;
     padding: 15px 45px;
     border: 1px solid green;
     border-radius: 30px;
@@ -628,6 +639,7 @@ cursor: pointer;
 }
 
 .next button {
+    background: white;
     padding: 15px 45px;
     border: 1px solid green;
     border-radius: 30px;
@@ -953,6 +965,182 @@ h5 {
     border: 5px solid #2AA270;
 }
 
-.radio:checked + span {
+.radio:checked + label {
     font-weight: bold;
+}
+/*Media*/
+@media screen and (max-width: 1283px) {
+    .about {
+        bottom: -130px;
+        width: 96%;
+    }
+}
+@media screen and (max-width: 1253px) {
+    .about {
+        bottom: -160px;
+        width: 96%;
+    }
+}
+@media screen and (max-width: 1235px) {
+    .about {
+        bottom: -190px;
+    }
+}
+
+@media screen and (max-width: 1186px) {
+    .top-img {
+        position: absolute;
+        bottom: -3px;
+        width: 42%;
+        right: 0;
+    }
+}
+@media screen and (max-width: 1111px) {
+    .about {
+        width: 100%;
+        bottom: -410px;
+    }
+    .about-li li {
+        margin: 10px;
+        min-width: 200px;
+    }
+    .our-service {
+        margin-top: 535px;
+    }
+}
+@media screen and (max-width: 1045px) {
+    .form {
+        top: 50%;
+        left: 25%;
+        width: 330px;
+    }
+    .discount {
+        height: 150vh;
+    }
+    .discount::before {
+        background-size: cover;
+        height: 150vh;
+    }
+    .paper {
+        position: absolute;
+        left: 355px;
+        top: 11%;
+        width: 61%;
+    }
+}
+@media screen and (max-width: 927px) {
+    .paper {
+        position: absolute;
+        left: 170px;
+        top: 11%;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .service-desc {
+        margin-left: 15px;
+    }
+
+    .service-text-container {
+        padding: 45px 22px;
+    }
+}
+
+
+@media screen and (max-width: 862px) {
+    .contacts {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 787px) {
+    .paper {
+        position: absolute;
+        left: 215px;
+        top: 12%;
+        width: 450px;
+    }
+    .discount-title {
+        margin-left: 20px;
+    }
+    .percent {
+        margin-left: 20px;
+    }
+    .discount-desc {
+        margin-left: 20px;
+        width: 46%;
+    }
+    .disc-img {
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .discount {
+        background: url(img/6216461.png) no-repeat;
+        background-size: cover;
+        height: 65vh;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: -375px;
+    }
+    .form {
+        top: 122%;
+        left: 15%;
+        width: 330px;
+    }
+    .agree-text {
+        width: 85%;
+    }
+    .paper {
+        position: absolute;
+        left: 175px;
+        top: 25%;
+        width: 461px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .top-img {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 710px) {
+.about {
+    bottom: -450px;
+}
+}
+
+@media screen and (max-width: 706px) {
+    .about {
+        bottom: -650px;
+    }
+    .our-service {
+        margin-top: 800px;
+    }
+}
+@media screen and (max-width: 682px) {
+    .paper {
+        position: absolute;
+        left: 159px;
+        top: 46%;
+        width: 320px;
+    }
+}
+@media screen and (max-width: 545px) {
+    .discount-title {
+        font-size: 36px;
+    }
+    .disc-img {
+        left: 296px;
+    }
+    .discount-desc {
+        width: 54%;
+    }
+    .form {
+        left: 10%;
+    }
 }
