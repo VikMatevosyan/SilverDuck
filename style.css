@@ -983,12 +983,14 @@ h5 {
         width: 96%;
     }
 }
+
 @media screen and (max-width: 1283px) {
-.metr {
-    top: 245px;
-    left: 228px;
+    .metr {
+        top: 245px;
+        left: 228px;
+    }
 }
-}
+
 @media screen and (max-width: 1253px) {
     .about {
         bottom: -160px;
@@ -1010,11 +1012,13 @@ h5 {
         right: 0;
     }
 }
+
 @media screen and (max-width: 1135px) {
     .metr {
         left: 203px;
     }
 }
+
 @media screen and (max-width: 1111px) {
     .about {
         width: 100%;
@@ -1052,6 +1056,7 @@ h5 {
     .answers label {
         font-size: 12px;
     }
+
     .metr {
         top: 200px;
         left: 187px;
@@ -1065,10 +1070,6 @@ h5 {
         width: 330px;
     }
 
-    .discount {
-        height: 150vh;
-    }
-
     .discount::before {
         content: url(img/fonblock3.png);
         opacity: 0.7;
@@ -1076,20 +1077,43 @@ h5 {
         display: block;
         overflow: hidden;
         position: absolute;
-        bottom: 0;
+        top: 0;
+    }
+
+    .discount-title {
+        margin-left: 25px;
+    }
+
+    .percent {
+        margin-left: 25px;
+    }
+
+    .discount-desc {
+        margin-left: 32px;
+        width: 45%;
+    }
+
+    .disc-img {
+        left: 355px
     }
 
     .paper {
         position: absolute;
-        left: 355px;
-        top: 11%;
-        width: 61%;
+        left: 190px;
+        top: 30%;
+        width: 70%;
+    }
+
+    .form {
+        top: 3%;
+        left: 62%;
+        width: 300px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .our-service {
-        height: 80vh;
+        height: 180vh;
     }
 
     .discount {
@@ -1121,14 +1145,93 @@ h5 {
         max-width: 710px;
         min-height: 570px;
     }
+
     .metr {
         left: 201px;
     }
+
     .paper {
         position: absolute;
-        left: 220px;
-        top: 11%;
+        left: 217px;
+        top: 66%;
         width: 61%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .top-img {
+        position: absolute;
+        bottom: -2px;
+        width: 34%;
+        right: 2px;
+    }
+
+    .our-service {
+        height: 180vh;
+    }
+
+    .discount {
+        height: 85vh;
+    }
+
+    .form {
+        top: 1%;
+        left: 59%;
+    }
+
+    .paper {
+        position: absolute;
+        left: 200px;
+        top: 36%;
+        width: 61%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .top-img {
+        position: absolute;
+        bottom: 0;
+        width: 364px;
+    }
+
+    .discount-title {
+        margin-left: 25px;
+    }
+
+    .percent {
+        margin-left: 25px;
+    }
+
+    .discount-desc {
+        margin-left: 32px;
+        width: 45%;
+    }
+
+    .disc-img {
+        left: 355px
+    }
+
+    .paper {
+        left: 110px;
+    }
+
+    .form {
+        left: 60%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .top-img {
+        width: 382px;
+        margin-right: 1px;
+    }
+
+    .top-img img {
+        width: 100%;
+    }
+
+    .top-text {
+        margin-left: 25px;
     }
 }
 
@@ -1136,8 +1239,12 @@ h5 {
     .paper {
         position: absolute;
         left: 170px;
-        top: 11%;
+        top: 37%;
         width: 600px;
+    }
+
+    .form {
+        width: 273px;
     }
 }
 
@@ -1151,6 +1258,16 @@ h5 {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .paper {
+        top: 17%;
+    }
+
+    .form {
+        left: 3%;
+        top: 86%;
+    }
+}
 
 @media screen and (max-width: 862px) {
     .contacts {
@@ -1163,9 +1280,9 @@ h5 {
 @media screen and (max-width: 787px) {
     .paper {
         position: absolute;
-        left: 215px;
-        top: 12%;
-        width: 450px;
+        left: 157px;
+        top: 19%;
+        width: 580px;
     }
 
     .discount-title {
@@ -1189,7 +1306,7 @@ h5 {
 
 @media screen and (max-width: 768px) {
     .our-service {
-        height: 100vh;
+        height: 180vh;
     }
 
     .discount {
@@ -1205,7 +1322,7 @@ h5 {
     }
 
     .form {
-        top: 50%;
+        top: 85%;
         left: 3%;
     }
 
@@ -1221,10 +1338,20 @@ h5 {
         max-width: 698px;
         min-height: 564px;
     }
+
     .metr {
         left: 201px;
     }
 
+}
+
+@media screen and (max-width: 755px) {
+    .paper {
+        position: absolute;
+        left: 175px;
+        top: 25%;
+        width: 461px;
+    }
 }
 
 @media screen and (max-width: 734px) {
@@ -1239,8 +1366,8 @@ h5 {
     }
 
     .form {
-        top: 122%;
-        left: 15%;
+        top: 135%;
+        left: 5%;
         width: 330px;
     }
 
@@ -1251,7 +1378,7 @@ h5 {
     .paper {
         position: absolute;
         left: 175px;
-        top: 25%;
+        top: 36%;
         width: 461px;
     }
 }
@@ -1277,6 +1404,7 @@ h5 {
     .our-service {
         margin-top: 800px;
     }
+
     .modal {
         min-width: 550px;
     }
@@ -1290,14 +1418,17 @@ h5 {
         width: 320px;
     }
 }
+
 @media screen and (max-width: 575px) {
     .modal {
         min-width: 470px;
     }
+
     .metr {
         left: 170px;
     }
 }
+
 @media screen and (max-width: 545px) {
     .discount-title {
         font-size: 36px;
@@ -1342,10 +1473,12 @@ h5 {
         justify-content: space-between;
         margin-top: 12px;
     }
+
     .metr {
         top: 184px;
         left: 170px;
     }
+
     .modal {
         min-width: 470px;
     }
@@ -1382,7 +1515,8 @@ h5 {
     .about {
         bottom: -1040px;
         left: 50%;
-        transform: translate(-30%, 0%);
+        transform: translate(-55%, 0%);
+        width: 50%;
     }
 
     .our-service {
@@ -1425,12 +1559,12 @@ h5 {
     }
 
     .discount-title {
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 10px;
     }
 
     .disc-img {
-        left: 188px;
+        left: 179px;
     }
 
     .paper {
@@ -1526,17 +1660,21 @@ h5 {
     }
 
 }
+
 @media screen and (max-width: 414px) {
     .layer4 h4 {
         margin-left: 45px;
     }
+
     .layer4 h5 {
         margin-right: 15px;
     }
+
     .layer4 .questions p {
         font-size: 14px;
         margin-right: 65px;
     }
+
     .layer4 .answers-yes {
         display: flex;
         justify-content: space-between;
@@ -1556,21 +1694,26 @@ h5 {
     .discount::before {
         bottom: -50px;
     }
+
     .form {
         left: 0;
         padding: 50px 11px;
         top: 105%;
     }
+
     .layer4 h4 {
         margin-left: 45px;
     }
+
     .layer4 h5 {
         margin-right: 15px;
     }
+
     .layer4 .questions p {
         font-size: 14px;
         margin-right: 65px;
     }
+
     .layer4 .answers-yes {
         display: flex;
         justify-content: space-between;
@@ -1622,21 +1765,26 @@ h5 {
         outline: none;
         cursor: pointer;
     }
+
     .form {
         left: 0;
         padding: 50px 11px;
         top: 125%;
     }
+
     .layer4 h4 {
         margin-left: 45px;
     }
+
     .layer4 h5 {
         margin-right: 15px;
     }
+
     .layer4 .questions p {
         font-size: 14px;
         margin-right: 65px;
     }
+
     .layer4 .answers-yes {
         display: flex;
         justify-content: space-between;
@@ -1687,7 +1835,7 @@ h5 {
     .about {
         bottom: -1040px;
         left: 50%;
-        transform: translate(-37%, 0%);
+        transform: translate(-75%, 0%);
     }
 
     .s-title {
@@ -1707,7 +1855,7 @@ h5 {
     }
 
     .disc-img {
-        left: 150px;
+        left: 140px;
     }
 
     .paper {
@@ -1724,10 +1872,17 @@ h5 {
 
     .form {
         left: 0;
-        padding: 50px 11px;
+        padding: 50px 0 50px 10px;
         top: 135%;
+        width: 96%;
     }
 
+    /*.form div {*/
+    /*    width: 90%;*/
+    /*}*/
+    /*.get-btn {*/
+    /*    width: 56%;*/
+    /*}*/
     .modal {
         width: 50%;
         min-width: 292px;
@@ -1810,6 +1965,7 @@ h5 {
         margin: 0 20px 0 37px;
         width: 100%;
     }
+
     .done {
         font-style: normal;
         font-weight: bold;
@@ -1819,21 +1975,31 @@ h5 {
         color: green;
         width: 82%;
     }
+
     .text {
         width: 85%;
         margin: 25px 10px 0 11px;
         display: flex;
         justify-content: space-between;
     }
+
     .input-container {
         display: flex;
         justify-content: space-between;
         width: 84%;
         margin: 0 0 0 3px;
     }
+
     .your-email {
-        margin-right: 33px;
+        margin-left: 9px;
+        width: 50%;
     }
+
+    .your-phone {
+        margin-left: 9px;
+        width: 50%;
+    }
+
     .inp {
         width: 42%;
         padding: 15px 15px 15px 20px;
@@ -1843,10 +2009,12 @@ h5 {
         margin: 15px -33px 15px 0;
         outline: none;
     }
+
     .privacy-policy {
         margin: 25px 10px 25px 10px;
         font-size: 14px;
     }
+
     .prev-btn button {
         padding: 15px 30px;
         border: 1px solid green;
@@ -1859,6 +2027,7 @@ h5 {
         background: white;
         cursor: pointer;
     }
+
     .form-buttons {
         width: 92%;
     }
