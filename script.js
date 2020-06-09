@@ -20,13 +20,15 @@ $(document).ready(function () {
             next.addClass('visible');
             $(current).removeClass('visible');
             $('.prev').removeClass('disabled');
+            if ($(".layer5").hasClass("visible")) {
+                            modal.addClass('hidden');
+                        }
+
         } else {
             $('.next').addClass('disabled');
 
         }
-        if ($(".layer5").hasClass("visible")) {
-            modal.addClass('hidden');
-        }
+
     });
 
 
@@ -35,10 +37,14 @@ $(document).ready(function () {
     $('.prev, .prev-btn').click(function () {
         let current = $('.layer.visible');
         let prev = $(current).prev();
+        let modal = $('.modal-btn');
         if (prev.length) {
             prev.addClass('visible');
             $(current).removeClass('visible');
             $('.next').removeClass('disabled');
+            if (!$(".layer5").hasClass("visible")) {
+                modal.addClass('visible');
+            }
         } else {
             $('.prev').addClass('disabled');
         }
