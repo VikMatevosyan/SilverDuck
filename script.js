@@ -18,16 +18,15 @@ $(document).ready(function () {
         let modal = $('.modal-btn');
         if (next.length) {
             next.addClass('visible');
-            if ($(".layer5").hasClass("visible")) {
-                         modal.addClass('disabled');
-                     }
             $(current).removeClass('visible');
             $('.prev').removeClass('disabled');
         } else {
             $('.next').addClass('disabled');
 
         }
-
+        if ($(".layer5").hasClass("visible")) {
+            modal.addClass('hidden');
+        }
     });
 
 
